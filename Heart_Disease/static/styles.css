@@ -58,6 +58,8 @@ header img {
     height: 100%;
     object-fit: cover;
     z-index: -1; /* Places video behind content */
+    filter: blur(8px); /* Adjust the value to control blurriness */
+
 }
 
 .container1,.container2 {
@@ -119,13 +121,48 @@ button:hover {
     background-color: #4cae4c;
 }
 .info {
-    margin: 20px auto;
-    max-width: 600px;
-    background: rgba(0, 0, 0, 0.6);
+    margin:10% auto;
+    max-width: 1200px;
+    max-height: 800px;
+    font-weight: bold;
+    box-shadow: 0 0 10px white;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
     line-height: 1.6;
     font-size: 1.1em;
-    text-align: justify;
+    
+}
+.info h2{
+    color: bisque;
+    text-align: center;
+}
+.about-sec2{
+    display: flex;
+    gap: 10px;
+}
+.about-sec2 div{
+    width: 100%;
+    text-align: center;
+    
+}
+#about-section {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+/* Styling for the background video */
+#About-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 0.6; /* Adjust transparency for visibility of text */
 }
