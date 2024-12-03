@@ -166,3 +166,73 @@ button:hover {
     filter: blur(2px);
     opacity: 0.6; /* Adjust transparency for visibility of text */
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container1, .container2 {
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input, button {
+        font-size: 0.9em;
+    }
+
+    .info {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1em;
+    }
+
+    .container1, .container2 {
+        margin-top: 20%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input, button {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .info {
+        font-size: 0.8em;
+    }
+}
